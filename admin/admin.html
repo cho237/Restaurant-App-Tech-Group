@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="stylesheet" type="text/css" href="../home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <script src="admin.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="container">
+            <a href="../home.html" class="logo">Admin</a>
+            <nav>
+                <ul>
+                    <!--                <li class="menu-container">-->
+                    <!--                    <a href="">John</a>-->
+                    <!--                    <div class="menu">-->
+                    <!--                        <a href="">Profile</a>-->
+                    <!--                    </div>-->
+                    <!--                </li>-->
+                    <li>
+                        <a href="" class="active">Products</a>
+                    </li>
+                    <li>
+                        <a href="">Orders </i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <div class="container">
+
+        <div class="products-container">
+
+            <div class="p-container-1">
+
+
+                <div class="">
+
+                    <div class="p-item">
+                        <table id="customers">
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tbody id="table-body">
+
+                            </tbody>
+
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="p-container-2">
+
+                <div class="p-form-container">
+                    <form action="">
+                        <div class="p-form-group">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" class="form-control" required>
+                        </div>
+                        <div class="p-form-group">
+                            <label for="price">Price</label>
+                            <input id="price" type="number" class="form-control" required>
+                        </div>
+                        <div class="p-form-group">
+                            <label for="image">Image Url</label>
+                            <input id="image" type="text" class="form-control" required>
+                        </div>
+                        <div class="p-form-group">
+                            <label for="time">Cook Time</label>
+                            <input id="time" type="number" class="form-control" required>
+                        </div>
+                        <div class="p-form-group">
+                            <label for="stock">Stock</label>
+                            <input id="stock" type="text" class="form-control" required>
+                        </div>
+
+                        <input id="save-btn" class="save-btn" onclick="saveProduct()" type="button" value="Save">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
