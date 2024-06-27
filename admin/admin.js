@@ -7,6 +7,7 @@ function fetchProducts() {
     .then((response) => response.json())
     .then((data) => {
       const products = [];
+  
       for (const key in data) {
         products.push({
           ...data[key],

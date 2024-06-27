@@ -1,4 +1,3 @@
-
 .cart-img {
     width: 5rem;
     height: 5rem;
@@ -19,6 +18,7 @@
     display: flex;
     gap: 1rem;
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 .cart-items {
@@ -36,13 +36,28 @@
 .cart-summary {
     flex: 2;
     border: 1px solid #ffbbbb;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 10px;
 }
 
-.cart-item button{
+.remove-cart-btn {
+    color: #e72929;
+}
+
+.plus-cart-btn {
+    color: #2b0f8f;
+}
+
+.remove-cart-btn,
+.plus-cart-btn {
     border-radius: 1rem;
     border: none;
     padding: .5rem;
-    color: #e72929;
     opacity: .7;
     outline: none;
+    cursor: pointer;
 }
